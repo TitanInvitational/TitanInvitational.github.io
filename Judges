@@ -1,0 +1,309 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Titan Invitational - Judges
+        </title>
+        <link rel="shortcut icon" type="image x-icon" href="https://media.parentsquare.com/chats/23370/95867258/784769801/full_b47c05588348abb1febe15766546ff08f92de37ec7951d9f78423e4e85f5bb35.png?Expires=1754853136&Signature=NgQBbw9kKVFZ-3dfr9gJUkapecL6RBwxNENtpmdozX63lf3dxW0jAhGlZGoh4MnDWBN~TeOh3eA0B65s-EOjsnNM07GGJObYvLke0MN0MxHRFF61EIJiIqMQ5qBN-Y81aBsa7897AJ~uMAeRTnJVNwkHKLPor81uJsTQ-n0LrPePgJKbJACEHqL7hwQZv~hgChdAZHOMeeOAKq7aOr30-wRfbgpUOuqPWecEZYHZNZombf7CFuzeWW1JWA6rza~hwcQyJ8bEuCtccB7JuyTdCYTVlSQlEtfB0HxCK8GYbgiSwwDy~0IPoMIUHEAyBxNjDuOmJYgY-iFznsU3KWrGbg__&Key-Pair-Id=APKAIIMEMZBREZKNEUJQ">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            html, body {
+              margin: 0;
+              padding: 0;
+              overflow-x: hidden;
+            }
+            @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+        
+            body {
+                display: flex;
+                flex-direction: column;
+                font-family: 'Roboto', sans-serif;
+                background-color: #A9A9A9;
+                min-height: 100vh;
+            }
+        
+            nav {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 20px;
+                height: 100px;
+                background-color: #012B5D;
+                /* position: sticky; */
+                top: 0;
+                z-index: 1000;
+            }
+        
+            .nav-left img {
+                height: 80px;
+            }
+        
+            .nav-right {
+                display: flex;
+                gap: 15px;
+            }
+        
+            .nav-right a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100px;
+                padding: 0 15px;
+                background-color: #012B5D;
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                border-left: 2px solid transparent;
+                transition: background 0.3s;
+            }
+        
+            .nav-right a:hover {
+                background-color: #79BE20;
+            }
+        
+            .bigMac {
+                display: none;
+                flex-direction: column;
+                cursor: pointer;
+            }
+        
+            .bigMac div {
+                width: 25px;
+                height: 3px;
+                background-color: white;
+                margin: 4px 0;
+            }
+            
+            .stick {
+                position: sticky;
+                top: 0;
+            }
+            
+            .container {
+                max-width: 1100px;
+                margin: 20px auto;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+                padding: 0 20px;
+            }
+            
+            .card {
+                background-color: #ffffff;
+                border-radius: 10px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            footer {
+                text-align: center;
+                padding: 15px;
+                background-color: #012B5D;
+                color: #ffffff;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: auto;
+            }
+            
+            html, body {
+                height: 100%;
+            }
+            
+            body {
+                display: flex;
+                flex-direction: column;
+                background-color: #A9A9A9;
+            }
+            
+            .yap {
+                max-width: 800px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #ffffff;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+            
+            @media (max-width: 768px) {
+                .nav-right {
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #012B5D;
+                    position: absolute;
+                    top: 100px;
+                    right: 0;
+                    width: 100%;
+                    transform: translateX(100%);
+                    transition: transform 0.3s ease-in-out;
+                }
+            
+                .nav-right.active {
+                    transform: translateX(0);
+                }
+            
+                .bigMac {
+                    display: flex;
+                }
+            }
+            
+            .container {
+                max-width: 1100px;
+                margin: 20px auto;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+                padding: 0 20px;
+            }
+            
+            @media (max-width: 992px) {
+                .container {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+            
+            @media (max-width: 600px) {
+                .container {
+                    grid-template-columns: 1fr;
+                }
+            
+                .nav-left img {
+                    height: 60px;
+                }
+            
+                .nav-right a {
+                    height: auto;
+                    padding: 15px;
+                    font-size: 18px;
+                }
+            
+                .yap {
+                    padding: 15px;
+                    margin: 10px;
+                }
+            
+                .card h2 {
+                    font-size: 20px;
+                }
+            
+                .card p {
+                    font-size: 16px;
+                }
+            }
+            
+            .mobile-menu a {
+                font-size: 1rem;
+                padding: 0.5rem;
+            }
+        </style>
+    </head>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0W1FZJPHM8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-0W1FZJPHM8');
+    </script>
+    
+    <body>
+        <nav>
+            <div class="nav-left">
+                <a href="/"><img src="https://media.parentsquare.com/chats/23370/95867258/784769801/full_b47c05588348abb1febe15766546ff08f92de37ec7951d9f78423e4e85f5bb35.png?Expires=1754853136&Signature=NgQBbw9kKVFZ-3dfr9gJUkapecL6RBwxNENtpmdozX63lf3dxW0jAhGlZGoh4MnDWBN~TeOh3eA0B65s-EOjsnNM07GGJObYvLke0MN0MxHRFF61EIJiIqMQ5qBN-Y81aBsa7897AJ~uMAeRTnJVNwkHKLPor81uJsTQ-n0LrPePgJKbJACEHqL7hwQZv~hgChdAZHOMeeOAKq7aOr30-wRfbgpUOuqPWecEZYHZNZombf7CFuzeWW1JWA6rza~hwcQyJ8bEuCtccB7JuyTdCYTVlSQlEtfB0HxCK8GYbgiSwwDy~0IPoMIUHEAyBxNjDuOmJYgY-iFznsU3KWrGbg__&Key-Pair-Id=APKAIIMEMZBREZKNEUJQ" alt="Logo"></a>
+            </div>
+            <div class="bigMac" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="nav-right" id="navLinks">
+                <a href="/">Home</a>
+                <a href="/judges.html">Judges</a>
+                <a href="/register.html">Registration</a>
+                <a href="/map.html">Map</a>
+            </div>
+        </nav>
+        
+        <header class="yap">
+            <h1>
+                Judge Panel
+            </h1>
+        </header>
+        <div class="container">
+            <div class="card">
+                <h2>Matthew Koperniak</h2>
+                <h3>Music Performance</h3>
+            </div>
+            
+            <div class="card">
+                <h2>Katie Groves</h2>
+                <h3>Music Performance</h3>
+            </div>
+            
+            <div class="card">
+                <h2>Robert Dykens</h2>
+                <h3>Music Effect</h3>
+            </div>
+            
+            <div class="card">
+                <h2>Colleen Marin</h2>
+                <h3>Visual Performance</h3>
+            </div>
+            
+            <div class="card">
+                <h2>Myles Giller</h2>
+                <h3>General Effect</h3>
+                <p>
+                    Myles Giller is the percussion director at Mountain View High School in Lawrenceville, Georgia. With over 13 years experience in the pageantry arts, he has had the privilege to work as an instructor, clinician, consultant, and designer for groups in Georgia, Florida, and Texas. During this time, Myles worked with Troopers Drum and Bugle Corps, Horizon Winds, Royalty Independent Percussion, and many other independent and scholastic ensembles.<br>
+                    In his performance career, Myles played Mellophone with the Blue Knights Drum and Bugle Corps in 2012/2013, and served as their drum major 2014/2015/2016.<br>
+                    Myles is excited to bring a fresh perspective to adjudication through his constructive feedback and focus on ensemble vocabulary, and general effect. He is committed to supporting the growth of young performers and the artistry of marching band programs.
+                </p>
+            </div>
+            
+            <div class="card">
+                <h2>Harrison Cho</h2>
+                <h3>Percussion</h3>
+                <p>
+                    Harrison Cho is a passionate music educator and accomplished percussionist, holding a degree in Music Education from Young Harris College. With 13 years of percussion experience and 4 years as a band director, he has dedicated his career to fostering a love for music in students. In addition to his teaching role, he serves as the principal percussionist with the Gwinnett Symphony Orchestra and the principal timpanist with the Toccoa Symphony Orchestra, showcasing his commitment to both performance and education in the world of music.
+                </p>
+            </div>
+            
+            <div class="card">
+                <h2>Sarah Schillinger</h2>
+                <h3>Colorguard</h3>
+                <p>
+                With a Bachelor's degree in Special Education and over 12 years of experience as an educator, Sarah brings a passion for teaching and student development both in the classroom and on the field. She has been involved in the pageantry arts for 20 years, including performance experience at Mill Creek High School, Georgia State University, and Alliance DBC. Currently serving as the Color Guard Director at Discovery High School, she has previously led programs at Chamblee High School and continues to work as a design consultant and choreographer with Dalton High School.<br>               Known for her work with small and developing programs, Sarah has also contributed to the success of teams at Mill Creek High School, North Forsyth High School, and several other schools across metro Atlanta. She currently resides in Lawrenceville, GA, with her dog, Vince.
+                </p>
+            </div>
+            
+            <div class="card">
+                <h2>Brooke Bong</h2>
+                <h3>Drum Major</h3>
+            </div>
+        </div>
+        <header class="yap">
+            <h2>
+                The Titan Invitational will use Caption Judging
+            </h2>
+        </header>
+        <footer>
+            <p>&copy; 2025 Discovery High School</p>
+        </footer>
+        <script>
+            function toggleMenu() {
+                const navLinks = document.getElementById('navLinks');
+                navLinks.classList.toggle('active');
+            }
+        </script>
+    </body>
+</html>
