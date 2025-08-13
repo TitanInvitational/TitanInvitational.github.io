@@ -1,0 +1,542 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Titan Invitational - Registration
+        </title>
+        <link rel="shortcut icon" type="image x-icon" href="https://media.parentsquare.com/chats/23370/95867258/784769801/full_b47c05588348abb1febe15766546ff08f92de37ec7951d9f78423e4e85f5bb35.png?Expires=1754853136&Signature=NgQBbw9kKVFZ-3dfr9gJUkapecL6RBwxNENtpmdozX63lf3dxW0jAhGlZGoh4MnDWBN~TeOh3eA0B65s-EOjsnNM07GGJObYvLke0MN0MxHRFF61EIJiIqMQ5qBN-Y81aBsa7897AJ~uMAeRTnJVNwkHKLPor81uJsTQ-n0LrPePgJKbJACEHqL7hwQZv~hgChdAZHOMeeOAKq7aOr30-wRfbgpUOuqPWecEZYHZNZombf7CFuzeWW1JWA6rza~hwcQyJ8bEuCtccB7JuyTdCYTVlSQlEtfB0HxCK8GYbgiSwwDy~0IPoMIUHEAyBxNjDuOmJYgY-iFznsU3KWrGbg__&Key-Pair-Id=APKAIIMEMZBREZKNEUJQ">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            html, body {
+              margin: 0;
+              padding: 0;
+              overflow-x: hidden;
+            }
+            @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+            
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+        
+            body {
+                display: flex;
+                flex-direction: column;
+                font-family: 'Roboto', sans-serif;
+                background-color: #A9A9A9;
+                min-height: 100vh;
+            }
+        
+            nav {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 20px;
+                height: 100px;
+                background-color: #012B5D;
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+            }
+        
+            .nav-left img {
+                height: 80px;
+            }
+        
+            .nav-right {
+                display: flex;
+                gap: 15px;
+            }
+        
+            .nav-right a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100px;
+                padding: 0 15px;
+                background-color: #012B5D;
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                border-left: 2px solid transparent;
+                transition: background 0.3s;
+            }
+        
+            .nav-right a:hover {
+                background-color: #79BE20;
+            }
+        
+            .bigMac {
+                display: none;
+                flex-direction: column;
+                cursor: pointer;
+            }
+        
+            .bigMac div {
+                width: 25px;
+                height: 3px;
+                background-color: white;
+                margin: 4px 0;
+            }
+            
+            /* .stick {
+                position: sticky;
+                top: 0;
+            } */
+            
+            footer {
+                text-align: center;
+                padding: 15px;
+                background-color: #012B5D;
+                color: #ffffff;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: auto;
+            }
+            
+            html, body {
+                height: 100%;
+            }
+            
+            body {
+                display: flex;
+                flex-direction: column;
+                background-color: #A9A9A9;
+            }
+            
+            .yap {
+                max-width: 800px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #ffffff;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+            
+            .yapJR {
+                max-width: 800px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #ffffff;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            .iframe-cont {
+                display: flex;
+                justify-content: center;
+                margin: 0 20px;
+            }
+            
+            @media (max-width: 768px) {
+                .nav-right {
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #012B5D;
+                    position: absolute;
+                    top: 100px;
+                    right: 0;
+                    width: 100%;
+                    transform: translateX(100%);
+                    transition: transform 0.3s ease-in-out;
+                }
+            
+                .nav-right.active {
+                    transform: translateX(0);
+                }
+            
+                .bigMac {
+                    display: flex;
+                }
+            }
+            
+            @media (max-width: 600px) {
+                .nav-left img {
+                    height: 60px;
+                }
+            
+                .nav-right a {
+                    height: auto;
+                    padding: 15px;
+                    font-size: 18px;
+                }
+            
+                .yap {
+                    padding: 15px;
+                    margin: 10px;
+                }
+            
+                .card h2 {
+                    font-size: 20px;
+                }
+            
+                .card p {
+                    font-size: 16px;
+                }
+            }
+            
+            .button {
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: #012B5D;
+                color: #ffffff;
+                text-decoration: none;
+                font-size: 1em;
+                font-weight: bold;
+                border-radius: 4px;
+                transition: background-color 0.3s;
+            }
+        
+            .button:hover {
+                background-color: #79BE20;
+            }
+            
+            input[type=text]:focus {
+                border: 3px solid #555;
+                background-color: #79BE20;
+                width: 100%;
+            }
+            
+            input[type=text], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                transition: width 0.4s ease-in-out;
+                
+                width: 130px;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                font-size: 16px;
+                background-color: white;
+                background-image: url('searchicon.png');
+                background-position: 10px 10px; 
+                background-repeat: no-repeat;
+                padding: 12px 20px 12px 40px;
+                transition: width 0.4s ease-in-out;
+            }
+            
+            .container {
+              display: block;
+              position: relative;
+              padding-left: 35px;
+              margin-bottom: 12px;
+              cursor: pointer;
+              font-size: 22px;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+            }
+            
+            .container input {
+              position: absolute;
+              opacity: 0;
+              cursor: pointer;
+              height: 0;
+              width: 0;
+            }
+            
+            .checkmark {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 25px;
+              width: 25px;
+              background-color: #eee;
+              border-radius: 50%;
+            }
+            
+            .container:hover input ~ .checkmark {
+              background-color: #ccc;
+            }
+            
+            .container input:checked ~ .checkmark {
+              background-color: #2196F3;
+            }
+            
+            .checkmark:after {
+              content: "";
+              position: absolute;
+              display: none;
+            }
+            
+            .container input:checked ~ .checkmark:after {
+              display: block;
+            }
+            
+            .container .checkmark:after {
+              top: 9px;
+              left: 9px;
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+              background: white;
+            }
+        </style>
+    </head>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0W1FZJPHM8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-0W1FZJPHM8');
+    </script>
+    
+    <body>
+        <div class="stick">
+            <nav>
+                <div class="nav-left">
+                    <a href="/"><img src="https://media.parentsquare.com/chats/23370/95867258/784769801/full_b47c05588348abb1febe15766546ff08f92de37ec7951d9f78423e4e85f5bb35.png?Expires=1754853136&Signature=NgQBbw9kKVFZ-3dfr9gJUkapecL6RBwxNENtpmdozX63lf3dxW0jAhGlZGoh4MnDWBN~TeOh3eA0B65s-EOjsnNM07GGJObYvLke0MN0MxHRFF61EIJiIqMQ5qBN-Y81aBsa7897AJ~uMAeRTnJVNwkHKLPor81uJsTQ-n0LrPePgJKbJACEHqL7hwQZv~hgChdAZHOMeeOAKq7aOr30-wRfbgpUOuqPWecEZYHZNZombf7CFuzeWW1JWA6rza~hwcQyJ8bEuCtccB7JuyTdCYTVlSQlEtfB0HxCK8GYbgiSwwDy~0IPoMIUHEAyBxNjDuOmJYgY-iFznsU3KWrGbg__&Key-Pair-Id=APKAIIMEMZBREZKNEUJQ" alt="Logo"></a>
+                </div>
+                <div class="bigMac" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="nav-right" id="navLinks">
+                    <a href="/">Home</a>
+                    <a href="/judges.html">Judges</a>
+                    <a href="/register.html">Registration</a>
+                    <a href="/map.html">Map</a>
+                </div>
+            </nav>
+        </div>
+        <!-- <header class="yap">
+            <h1>
+                Registration is NOT open yet!
+                Check back on May 17th, 2025!
+            </h1>
+        </header>
+        <p class="yap">
+            Based on # of wind players:
+            Class A = 1 - 40 wind players
+            Class AA = 41 - 60 wind players
+        </p> -->
+        <!-- <div class="iframe-cont">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc9pRRIz5f7TuFx9DTSzsidlgbSd2OK3CabGss9mn4Rls3nYg/viewform?embedded=true" width="640" height="4528" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div> -->
+        <!-- <header class="yap">
+            We are having some technical issues right now with the form<br>
+            For now click <a href="https://docs.google.com/forms/d/e/1FAIpQLSc9pRRIz5f7TuFx9DTSzsidlgbSd2OK3CabGss9mn4Rls3nYg/viewform?usp=header">HERE</a> to register
+        </header> -->
+        
+        <header class="yap">
+            <strong>Registration Deadline: Monday, September 8, 2025<br><br>
+            
+            Competition Date: October 18, 2025</strong><br>
+            Please complete the following form. This form is required for registration.<br><br>
+            
+            <strong>Please send your check for $100 and $500 Performance Bond as separate checks.
+            Mail to:</strong><br>
+            Mail to:<br>
+            Discovery High School Band Boosters<br>
+            1335 Old Norcross Rd<br>
+            Lawrenceville, GA 30046<br>
+            Attn: Rob Myles<br>
+        </header>
+        <form class="yapJR" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSc9pRRIz5f7TuFx9DTSzsidlgbSd2OK3CabGss9mn4Rls3nYg/formResponse">
+            <div>
+                <label for="sname">School name:</label><br>
+                <input type="text" id="sname" name="entry.1876330717" required><br><br>
+            </div>
+            
+            <div>
+                <label for="bname">Band name:</label><br>
+                <input type="text" id="bname" name="entry.684967756" required><br><br>
+            </div>
+            
+            <div>
+                <label for="city">City:</label><br>
+                <input type="text" id="city" name="entry.692972344" required><br><br>
+            </div>
+            
+            <div>
+                <label for="state">State:</label><br>
+                <input type="text" id="state" name="entry.513748652" required><br><br>
+            </div>
+            
+            <div>
+                <label for="dName">Director's Name:</label><br>
+                <input type="text" id="dName" name="entry.111432380" required><br><br>
+            </div>
+            
+            <div>
+                <label for="dEmail">Director's Email:</label><br>
+                <input type="text" id="dEmail" name="entry.201434726" required><br><br>
+            </div>
+            
+            <div>
+                <label for="dCellPhone">Director's Cell Phone:</label><br>
+                <input type="text" id="dCellPhone" name="entry.620078855" required><br><br>
+            </div>
+            
+            <div>
+                <label for="dOfficePhone">Director's Office Phone:</label><br>
+                <input type="text" id="dOfficePhone" name="entry.1381234273" required><br><br>
+            </div>
+            
+            <div>
+                <label for="aDirectors">Assistant Diractor(s):</label><br>
+                <input type="text" id="aDirectors" name="entry.374052297" required><br><br>
+            </div>
+            
+            <div>
+                <label for="oStaff">Staff or other Directors in the order you would like them announced:</label><br>
+                <input type="text" id="oStaff" name="entry.1967739092" required><br><br>
+            </div>
+            
+            <div>
+                <label for="sPrincipal">School Principal:</label><br>
+                <input type="text" id="sPrincipal" name="entry.546169147" required><br><br>
+            </div>
+            
+            <div>
+                <p>Class:</p><br>
+                
+                <label class="container" for="a"> A - up to 40 wind players
+                <input type="radio" id="a" name="entry.359347490" value="A - up to 40 wind players">
+                <span class="checkmark"></span>
+                </label>
+                
+                <label class="container" for="aa"> AA - 41-60 wind players
+                <input type="radio" id="aa" name="entry.359347490" value="AA - 41-60 wind players">
+                <span class="checkmark"></span>
+                </label><br><br>
+            </div>
+            
+            <div>
+                <label for="numGuard">Number of Colorguard:</label><br>
+                <input type="text" id="numGuard" name="entry.724882331" min="0" value="0" required><br><br>
+            </div>
+            
+            <div>
+                <p>Please mark if you have the following (Select all that apply):</p><br>
+                
+                <label class="container" for="ma"> Majorettes
+                <input type="checkbox" id="ma" name="entry.1606633344" value="Majorettes">
+                <span class="checkmark"></span>
+                </label>
+                
+                <label class="container" for="da"> Dancers
+                <input type="checkbox" id="da" name="entry.1606633344" value="Dancers">
+                <span class="checkmark"></span>
+                </label><br><br>
+            </div>
+            
+            <div>
+                <p>Will you be using props?</p><br>
+                
+                <label class="container" for="y"> Yes
+                <input type="radio" id="y" name="entry.515668437" value="Yes">
+                <span class="checkmark"></span>
+                </label>
+                
+                <label class="container" for="n"> No
+                <input type="radio" id="n" name="entry.515668437" value="No">
+                <span class="checkmark"></span>
+                </label><br><br>
+            </div>
+            
+            <div>
+                <label for="numTotal">Total number of performers (Band+Guard+Percussion):</label><br>
+                <input type="text" id="numTotal" name="entry.2082305237" min="0" value="0" required><br><br>
+            </div>
+            
+            <div>
+                <label for="numChap">Number of Chaperones, including Equipment Parents (allowed 1 chaperone pass per 10 performers):</label><br>
+                <input type="text" id="numChap" name="entry.917262794" min="0" value="0" required><br><br>
+            </div>
+            
+            <div>
+                <label for="numBus">Bus Quantity:</label><br>
+                <input type="text" id="numBus" name="entry.979274658" min="0" value="0" required><br><br>
+            </div>
+            
+            <div>
+                <label for="numSemi">Semi-Truck Quantity:</label><br>
+                <input type="text" id="numSemi" name="entry.1287146073" min="0" value="0" required><br><br>
+            </div>
+            
+            <div>
+                <label for="numBTruck">Box Truck Quantity:</label><br>
+                <input type="text" id="numBTruck" name="entry.1593633250" min="0" value="0" required><br><br>
+            </div>
+            
+            <div>
+                <label for="numTrailor">Trailor Quantity:</label><br>
+                <input type="text" id="numTrailor" name="entry.1343004336" min="0" value="0" required><br><br>
+            </div>
+            
+            <div>
+                <label for="numOtherV">Other Equipment Vehicles (List type and quantity of each):</label><br>
+                <input type="text" id="numOtherV" name="entry.1163463765" min="0" value="0" required><br><br>
+            </div>
+            
+            <div>
+                <p>Will you need a dressing area?</p><br>
+                
+                <label class="container" for="yy"> Yes
+                <input type="radio" id="yy" name="entry.2120299097" value="Yes">
+                <span class="checkmark"></span>
+                </label>
+                
+                <label class="container" for="nn"> No
+                <input type="radio" id="nn" name="entry.2120299097" value="No">
+                <span class="checkmark"></span>
+                </label><br><br>
+            </div>
+            
+            <div>
+                <label for="nDM">Names of Drum Majors:</label><br>
+                <input type="text" id="nDM" name="entry.1013942611" required><br><br>
+            </div>
+            
+            <div>
+                <label for="nOther">Names of other Student Leaders/Officers:</label><br>
+                <input type="text" id="nOther" name="entry.882435547" required><br><br>
+            </div>
+            
+            <div>
+                <label for="sTitle">Show Title:</label><br>
+                <input type="text" id="sTitle" name="entry.254348925" required><br><br>
+            </div>
+            
+            <div>
+                <label for="pR">Performance Repertoire (List exactly as you want it read by the announcer):</label><br>
+                <input type="text" id="pR" name="entry.1945200143" required><br><br>
+            </div>
+            
+            <div>
+                <label for="oSC">Please list any other special circumstances we should know about (If none put N/A):</label><br>
+                <input type="text" id="oSC" name="entry.1156191364"><br><br>
+            </div>
+            
+            <div>
+                <input class="button" type="reset">
+            </div>
+            <button class="button" type="submit">Submit Form</button>
+        </form>
+        
+        <footer>
+            <p>&copy; 2025 Discovery High School</p>
+        </footer>
+        <script>
+            function toggleMenu() {
+                const navLinks = document.getElementById('navLinks');
+                navLinks.classList.toggle('active');
+            }
+        </script>
+    </body>
+</html>
