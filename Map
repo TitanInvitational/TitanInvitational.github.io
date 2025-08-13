@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Titan Invitational - Registration
+        </title>
+        <link rel="shortcut icon" type="image x-icon" href="https://media.parentsquare.com/chats/23370/95867258/784769801/full_b47c05588348abb1febe15766546ff08f92de37ec7951d9f78423e4e85f5bb35.png?Expires=1754853136&Signature=NgQBbw9kKVFZ-3dfr9gJUkapecL6RBwxNENtpmdozX63lf3dxW0jAhGlZGoh4MnDWBN~TeOh3eA0B65s-EOjsnNM07GGJObYvLke0MN0MxHRFF61EIJiIqMQ5qBN-Y81aBsa7897AJ~uMAeRTnJVNwkHKLPor81uJsTQ-n0LrPePgJKbJACEHqL7hwQZv~hgChdAZHOMeeOAKq7aOr30-wRfbgpUOuqPWecEZYHZNZombf7CFuzeWW1JWA6rza~hwcQyJ8bEuCtccB7JuyTdCYTVlSQlEtfB0HxCK8GYbgiSwwDy~0IPoMIUHEAyBxNjDuOmJYgY-iFznsU3KWrGbg__&Key-Pair-Id=APKAIIMEMZBREZKNEUJQ">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            html, body {
+              margin: 0;
+              padding: 0;
+              overflow-x: hidden;
+            }
+            @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+            
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+        
+            body {
+                display: flex;
+                flex-direction: column;
+                font-family: 'Roboto', sans-serif;
+                background-color: #A9A9A9;
+                min-height: 100vh;
+            }
+            
+            nav {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 20px;
+                height: 100px;
+                background-color: #012B5D;
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+            }
+        
+            .nav-left img {
+                height: 80px;
+            }
+        
+            .nav-right {
+                display: flex;
+                gap: 15px;
+            }
+        
+            .nav-right a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100px;
+                padding: 0 15px;
+                background-color: #012B5D;
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                border-left: 2px solid transparent;
+                transition: background 0.3s;
+            }
+        
+            .nav-right a:hover {
+                background-color: #79BE20;
+            }
+        
+            .bigMac {
+                display: none;
+                flex-direction: column;
+                cursor: pointer;
+            }
+        
+            .bigMac div {
+                width: 25px;
+                height: 3px;
+                background-color: white;
+                margin: 4px 0;
+            }
+            
+            footer {
+                text-align: center;
+                padding: 15px;
+                background-color: #012B5D;
+                color: #ffffff;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            .link {
+                color: #ADD8E6;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+            }
+            
+            @media (max-width: 768px) {
+                .nav-right {
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #012B5D;
+                    position: absolute;
+                    top: 100px;
+                    right: 0;
+                    width: 100%;
+                    transform: translateX(100%);
+                    transition: transform 0.3s ease-in-out;
+                }
+            
+                .nav-right.active {
+                    transform: translateX(0);
+                }
+            
+                .bigMac {
+                    display: flex;
+                }
+            }
+            
+            @media (max-width: 600px) {
+                .container {
+                    grid-template-columns: 1fr;
+                }
+            
+                .nav-left img {
+                    height: 60px;
+                }
+            
+                .nav-right a {
+                    height: auto;
+                    padding: 15px;
+                    font-size: 18px;
+                }
+            
+                .yap {
+                    padding: 15px;
+                    margin: 10px;
+                }
+            
+                .card h2 {
+                    font-size: 20px;
+                }
+            
+                .card p {
+                    font-size: 16px;
+                }
+            }
+        </style>
+    </head>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0W1FZJPHM8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-0W1FZJPHM8');
+    </script>
+    
+    <body>
+        
+        <nav>
+            <div class="nav-left">
+                <a href="/"><img src="https://media.parentsquare.com/chats/23370/95867258/784769801/full_b47c05588348abb1febe15766546ff08f92de37ec7951d9f78423e4e85f5bb35.png?Expires=1754853136&Signature=NgQBbw9kKVFZ-3dfr9gJUkapecL6RBwxNENtpmdozX63lf3dxW0jAhGlZGoh4MnDWBN~TeOh3eA0B65s-EOjsnNM07GGJObYvLke0MN0MxHRFF61EIJiIqMQ5qBN-Y81aBsa7897AJ~uMAeRTnJVNwkHKLPor81uJsTQ-n0LrPePgJKbJACEHqL7hwQZv~hgChdAZHOMeeOAKq7aOr30-wRfbgpUOuqPWecEZYHZNZombf7CFuzeWW1JWA6rza~hwcQyJ8bEuCtccB7JuyTdCYTVlSQlEtfB0HxCK8GYbgiSwwDy~0IPoMIUHEAyBxNjDuOmJYgY-iFznsU3KWrGbg__&Key-Pair-Id=APKAIIMEMZBREZKNEUJQ" alt="Logo"></a>
+            </div>
+            <div class="bigMac" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="nav-right" id="navLinks">
+                <a href="/">Home</a>
+                <a href="/judges.html">Judges</a>
+                <a href="/register.html">Registration</a>
+                <a href="/map.html">Map</a>
+            </div>
+        </nav>
+        
+        
+        <img src="https://media.parentsquare.com/chats/23370/95867258/788132608/full_e74a99efa0cdb3dfd990dea6ef2227956bf6ddc7c9f8315b0642dfb0008958c3.jpg?Expires=1754853136&Signature=EX5nb8NpzRnQzxxz3LWMlbFTTLCwqwIgFXLN1BKykXawt0MSv542kugUTh47P-LR0St7GzM8-Mi~j2f6G-PsCXF0-BLP3QXYYgjJzv-qq9L6APaf-lwu-cst27PRhZFV6QJW-x9KgqSqjQ9U1m~TohC5lgefdjzJV~GF~~MVQaijtrjDM9j3VTm3-tc-SVupkYmz6UhAOtSVJmy6bktFeMLuP3Qsv-jH5tRtnwPoR-HOi2kccByL4rUCu4S-AUSon6s4jvPzm5SKlf79IiLOkc6bAhEfi9M2qRsoLCi8YsNvMfJcl5beKQOaNacTkyuiBd4zAiJRU8WykhAi8IiivA__&Key-Pair-Id=APKAIIMEMZBREZKNEUJQ">
+        <img src="https://media.parentsquare.com/chats/23370/95867258/788132608/full_031155b1996c15285c4803aa0ca9ced35d58f3f89686d7098ef728d316672338.png?Expires=1754853136&Signature=Mr1a1ArRBsgn3sduK6siPkvuJTlMkPcFcDvbpCPhJ0tZHobWNgFzBZk7CmTGjnvUogLVvW8WZOzrzOXX7mJk6VU2u2DljjEeMkqfyGYt2GD0sCgriW0sjSWccoG869hZkoBdwWkSVPoHISMa1lhEmSdR2SptN~UBBcfVGxiRiY4v2uSrRKbIzkPCH~sigGbX8t0Sm22GTiIz01uEbSQlDE7YvLMUblA1mSMjNAIxSpYrmQlHLDeuiaJzjGeKJ1ezXtgWB77-zzI7BeIBBD~zhLF~sJRsYRyxwHCj6KxLZ65lb6Y-M1LeWFpQ~rhtdbp~gxxiL5yOqLGfpNzsunQQZg__&Key-Pair-Id=APKAIIMEMZBREZKNEUJQ">
+        
+        <footer>
+            <p>
+                Address: 1335 Old Norcross Rd, Lawrenceville, GA 30046 (<a class="link" href="https://maps.app.goo.gl/Go22UuehKRu3zhXC7">Google Maps</a>)
+            </p>
+            <p>
+                &copy; 2025 Discovery High School
+            </p>
+        </footer>
+        
+        <script>
+            function toggleMenu() {
+                const navLinks = document.getElementById('navLinks');
+                navLinks.classList.toggle('active');
+            }
+        </script>
+    </body>
+</html>
