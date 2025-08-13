@@ -1,0 +1,261 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <!-- DEVELOPED ENTIRELY BY EDUARDO GONZALEZ-REYNOSO-->
+        <meta charset="UTF-8" />
+        <title>
+            Titan Invitational - Home
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="https://media.parentsquare.com/chats/23370/95867258/784769801/full_b47c05588348abb1febe15766546ff08f92de37ec7951d9f78423e4e85f5bb35.png?Expires=1754853136&Signature=NgQBbw9kKVFZ-3dfr9gJUkapecL6RBwxNENtpmdozX63lf3dxW0jAhGlZGoh4MnDWBN~TeOh3eA0B65s-EOjsnNM07GGJObYvLke0MN0MxHRFF61EIJiIqMQ5qBN-Y81aBsa7897AJ~uMAeRTnJVNwkHKLPor81uJsTQ-n0LrPePgJKbJACEHqL7hwQZv~hgChdAZHOMeeOAKq7aOr30-wRfbgpUOuqPWecEZYHZNZombf7CFuzeWW1JWA6rza~hwcQyJ8bEuCtccB7JuyTdCYTVlSQlEtfB0HxCK8GYbgiSwwDy~0IPoMIUHEAyBxNjDuOmJYgY-iFznsU3KWrGbg__&Key-Pair-Id=APKAIIMEMZBREZKNEUJQ" type="image/x-icon">
+        <style>
+            html, body {
+              margin: 0;
+              padding: 0;
+              overflow-x: hidden;
+            }
+            @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+        
+            body {
+                display: flex;
+                flex-direction: column;
+                font-family: 'Roboto', sans-serif;
+                background-color: #A9A9A9;
+                min-height: 100vh;
+            }
+        
+            nav {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 20px;
+                height: 100px;
+                background-color: #012B5D;
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+            }
+        
+            .nav-left img {
+                height: 80px;
+            }
+        
+            .nav-right {
+                display: flex;
+                gap: 15px;
+            }
+        
+            .nav-right a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100px;
+                padding: 0 15px;
+                background-color: #012B5D;
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                border-left: 2px solid transparent;
+                transition: background 0.3s;
+            }
+        
+            .nav-right a:hover {
+                background-color: #79BE20;
+            }
+        
+            .bigMac {
+                display: none;
+                flex-direction: column;
+                cursor: pointer;
+            }
+        
+            .bigMac div {
+                width: 25px;
+                height: 3px;
+                background-color: white;
+                margin: 4px 0;
+            }
+        
+            .slideshow-container {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+        
+            .slide {
+                display: none;
+                width: 100%;
+                height: 100%;
+            }
+        
+            .slide img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        
+            .fade {
+                animation: fadeEffect 1s ease-in-out;
+            }
+        
+            @keyframes fadeEffect {
+                from { opacity: 0.4; }
+                to { opacity: 1; }
+            }
+        
+            .yap {
+                max-width: 800px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: white;
+                border-radius: 8px;
+                text-align: center;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+        
+            footer {
+                background-color: #012B5D;
+                color: white;
+                text-align: center;
+                padding: 15px;
+            }
+        
+            .link {
+                color: #ADD8E6;
+            }
+        
+            @media (max-width: 768px) {
+                .nav-right {
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #012B5D;
+                    position: absolute;
+                    top: 100px;
+                    right: 0;
+                    width: 100%;
+                    transform: translateX(100%);
+                    transition: transform 0.3s ease-in-out;
+                }
+            
+                .nav-right.active {
+                    transform: translateX(0);
+                }
+            
+                .bigMac {
+                    display: flex;
+                }
+            }
+            
+            @media (max-width: 600px) {
+                .container {
+                    grid-template-columns: 1fr;
+                }
+            
+                .nav-left img {
+                    height: 60px;
+                }
+            
+                .nav-right a {
+                    height: auto;
+                    padding: 15px;
+                    font-size: 18px;
+                }
+            
+                .yap {
+                    padding: 15px;
+                    margin: 10px;
+                }
+            
+                .card h2 {
+                    font-size: 20px;
+                }
+            
+                .card p {
+                    font-size: 16px;
+                }
+            }
+            
+            .stick {
+                position: sticky;
+                top: 0;
+            }
+        </style>
+    </head>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0W1FZJPHM8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-0W1FZJPHM8');
+    </script>
+    
+    <body>
+        <div class="stick">    
+            <nav>
+                <div class="nav-left">
+                    <a href="/"><img src="https://media.parentsquare.com/chats/23370/95867258/784769801/full_b47c05588348abb1febe15766546ff08f92de37ec7951d9f78423e4e85f5bb35.png?Expires=1754853136&Signature=NgQBbw9kKVFZ-3dfr9gJUkapecL6RBwxNENtpmdozX63lf3dxW0jAhGlZGoh4MnDWBN~TeOh3eA0B65s-EOjsnNM07GGJObYvLke0MN0MxHRFF61EIJiIqMQ5qBN-Y81aBsa7897AJ~uMAeRTnJVNwkHKLPor81uJsTQ-n0LrPePgJKbJACEHqL7hwQZv~hgChdAZHOMeeOAKq7aOr30-wRfbgpUOuqPWecEZYHZNZombf7CFuzeWW1JWA6rza~hwcQyJ8bEuCtccB7JuyTdCYTVlSQlEtfB0HxCK8GYbgiSwwDy~0IPoMIUHEAyBxNjDuOmJYgY-iFznsU3KWrGbg__&Key-Pair-Id=APKAIIMEMZBREZKNEUJQ" alt="Logo"></a>
+                </div>
+                <div class="bigMac" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="nav-right" id="navLinks">
+                    <a href="/">Home</a>
+                    <a href="/judges.html">Judges</a>
+                    <a href="/register.html">Registration</a>
+                    <a href="/map.html">Map</a>
+                </div>
+            </nav>
+        </div>
+        
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="https://media.parentsquare.com/chats/23370/95867258/788168125/full_c1d1a6c3edf94f22d6a8ef46327ce9480bbe4797a2dfc406eb03fa67bcaa7f91.jpg?Expires=1754853136&Signature=F4uTLSTx4xrmLcZSuRXaLMXZiy5OWew~6EuW2OoJtTvvw~IHkjVi6gVg8GMqLbhgrnkSDNt5uxYOuIAUfOAcqVwOkzNtQL6p442csbg24uHVsjC-FPPYTOnQlCBtUO8~-c-aHSgekN3ktNMmXrJRbwaKQI4yXHy~HdVjuZ8SEVV46GEny6fIv1QQirpiXx0wILiAeGeM41WxYd1s0NmpKQ-Fv2Rzqo1t9hgysngKgEo8xLvudpIZB5SaXAMsS32W~fSuJeSwLcgGr3ID48ytLWRnstcRZyMaZ-BU6r2ELv8mP3GrNXGRdAFL-RJM1hIdg1LyoWtYnSk~yAJC5Vpc0Q__&Key-Pair-Id=APKAIIMEMZBREZKNEUJQ" alt="Slide 1">
+            </div>
+            <div class="slide fade">
+                <img src="https://media.parentsquare.com/chats/23370/95867258/788168125/full_2cf52112ad4604e3333202ac899a66f97cf8228fc80ffc1bbe1f78e996c7747c.jpg?Expires=1754853136&Signature=LnIXgxlv2hbLYHLXOh0kpdj5tdDH9nHee8yNp281bOVE8F0~mm2llHn2cXqmbP~k5~4EE-7OPysk5RqHfAlJzxuPQwDQyLm9FFe37llMyTyt2K3sUXP7GINOpXZeHeQUIuU-LzFpvuiVRgE5NnkqzP023UkawD5EHCIx3e-CyM1dLED8OZBak4NC7E~ukCqJYYKRh~BCqZl5hcrcA9pR9bNgZfVSwuCnWAeCfqlUZQ86j~y2ZEEyEQdQ4VkC7pAUTZmvhFwnocxHWa37YUGL40D4her5ziL-7HCU8vusxK1Bk0LPChq8KTAmDNk6VLlFmIYSI7euBIKm9Ripu6UlQg__&Key-Pair-Id=APKAIIMEMZBREZKNEUJQ" alt="Slide 2">
+            </div>
+            <div class="slide fade">
+                <img src="https://media.parentsquare.com/chats/23370/95867258/788168125/full_d7be126765cfa56a879c8b895fcb15d14374bbfb5a120110f63fe023a2e84a0f.jpg?Expires=1754853136&Signature=FUWxew6GLTdNgfhwE4LOaS-aAl-LPzUZIyggrFOv0EsvevTRRnBIhVFraAy~WNDzpVRSMat1hTicpt0ktibOBZW7uLekaBqU38yMegkS6sakbi2S8CFPNLc6cnzvDIvu6MoFqBkUC0-WSHHJ9w6bWFAWQ56-~oxEsd0M~176UkmJgh~dFfXqraVPqMx1UmWmsEnfcxrOojn~ii5ZMPh2-djLlx8K0uSHkZyVzYzswiWZIzSRd3vhYtV1CXQBO7esWCueTcYvgjde1veSv3tWKQG1stR5spjvYQPZajBpTmDP4FjazLwut1MoN4k6IS1tYe~8wq-tgL4f519d8i6pZA__&Key-Pair-Id=APKAIIMEMZBREZKNEUJQ" alt="Slide 3">
+            </div>
+        </div>
+
+        <p class="yap">
+            Welcome to the inaugural Titan Invitational! Located in the heart of Lawrenceville, Georgia, Discovery High School is the home of the Titan Regiment Marching Band and we are thrilled to be hosting your band for our inaugural marching band competition. Come show off your student's hard work and skill and compete against other Class A and AA bands!
+        </p>
+
+        <footer>
+            <p>Follow us on <a class="link" href="https://www.instagram.com/titaninvitational?igsh=a3prazFjcHA5Ymkx">Instagram</a>!</p>
+        </footer>
+        <footer>
+            <p>&copy; 2025 Discovery High School</p>
+        </footer>
+
+        <script>
+            let slideIndex = 0;
+            function showSlides() {
+                const slides = document.querySelectorAll(".slide");
+                slides.forEach(slide => slide.style.display = "none");
+                slideIndex = (slideIndex + 1 > slides.length) ? 1 : slideIndex + 1;
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 4000);
+            }
+
+            document.addEventListener("DOMContentLoaded", showSlides);
+
+            function toggleMenu() {
+                const navLinks = document.getElementById("navLinks");
+                navLinks.classList.toggle("active");
+            }
+        </script>
+    </body>
+</html>
